@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block blog %}
+
+
+<div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col">
+        <h2>{{blog.title}}</h2>
+        <img src="{{blog.image.url}}" class="img-fluid" style="width: 200px; height: auto;">
+        <p>{{blog.content}}</p>
+   
+          
+          
+      </div>
+      {% endfor %}
+      </div>
+    <div class="col">
+    </div>
+    </div>
+  </div>
+{% endblock %}
